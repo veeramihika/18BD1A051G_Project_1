@@ -96,7 +96,7 @@ app.put('/addventilatorbyuser',middleware.checkToken,(req,res)=>{
 });
 
 //delete ventilator by ventilatorId
-app.put('/deleteventilatorbyid',middleware.checkToken,(req,res)=>{
+app.delete('/deleteventilatorbyid',middleware.checkToken,(req,res)=>{
     var ventid={"ventilatorId":req.body.ventilatorId};
     console.log("delete ventilator by ventilatorId"+ventid);
     db.collection("ventilators").deleteOne(ventid,function (err,result){
