@@ -1,0 +1,81 @@
+db.hospital.insertMany(
+[
+ {
+	"hId":"H1","name":"Apollo",
+	"location":"17.398644,78.434334",
+	"address":"Near Old MLA Quarters, Hyderguda, Hyderabad, Telangana",
+	"contactNo":"040-23567488"
+ },
+ {
+	"hId":"H2",
+	"name":"Global",
+	"location":"18.273874,98.883774",
+	"address":"Near LB Nagar, Hyderabad, Telangana",
+	"contactNo":"040-24684689"
+ },
+ {
+	"hId":"H3",
+	"name":"Sunshine",
+	"location":"27.8939849,89.8493827",
+	"address":"Gachibowli, Hyderabad, Telangana",
+	"contactNo":"040-24678936"
+ }
+]);
+
+db.ventilatorInfo.insertMany(
+[
+ {
+	"hId":"H1",
+	"ventilatorId":"H1V1",
+	"status":"occupied",
+	"name":"Apollo",
+ },
+ {
+	"hId":"H1",
+	"ventilatorId":"H1V2",
+	"status":"available",
+	"name":"Apollo",
+ },
+ {
+	"hId":"H1",
+	"ventilatorId":"H1V3",
+	"status":"in-maintenance",
+	"name":"Apollo",
+ },
+ {
+	"hId":"H2",
+	"ventilatorId":"H2V1",
+	"status":"occupied",
+	"name":"Global",
+ },
+ {
+	"hId":"H2",
+	"ventilatorId":"H2V2",
+	"status":"available",
+	"name":"Global",
+ },
+ {
+	"hId":"H2",
+	"ventilatorId":"H2V3",
+	"status":"in-maintenance",
+	"name":"Global",
+ },
+ {
+	"hId":"H3",
+	"ventilatorId":"H3V1",
+	"status":"occupied",
+	"name":"Sunshine",
+ },
+ {
+	"hId":"H3",
+	"ventilatorId":"H3V2",
+	"status":"available",
+	"name":"Sunshine",
+ },
+ {
+	"hId":"H3",
+	"ventilatorId":"H3V3",
+	"status":"in-maintenance",
+	"name":"Sunshine",
+ }
+]);
